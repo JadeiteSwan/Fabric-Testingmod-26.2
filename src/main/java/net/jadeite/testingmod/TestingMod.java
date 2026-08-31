@@ -2,6 +2,7 @@ package net.jadeite.testingmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.jadeite.testingmod.item.ModItems;
 import net.minecraft.resources.Identifier;
 
 import org.slf4j.Logger;
@@ -13,7 +14,7 @@ public class TestingMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
 	}
 
 	public static Identifier id(String path) {
