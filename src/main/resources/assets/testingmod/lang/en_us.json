@@ -1,4 +1,6 @@
 {
   "item.testingmod.cheese_item": "Cheese",
-  "item.testingmod.raw_cheese_item": "Raw Cheese"
+  "item.testingmod.raw_cheese_item": "Raw Cheese",
+  "creativemodetab.testingmod.cheese_items": "Cheese Items",
+  "creativemodetab.testingmod.cheese_blocks": "Cheese Blocks"
 }
