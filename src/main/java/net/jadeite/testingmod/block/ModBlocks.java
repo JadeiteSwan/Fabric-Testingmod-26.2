@@ -36,6 +36,12 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.GILDED_BLACKSTONE)));
 
+    public static final Block BOUNTIFUL_CHEESE_ORE = registerBlock("bountiful_cheese_ore",
+            properties -> new DropExperienceBlock(UniformInt.of(5, 10), properties
+                    .strength(8f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.GILDED_BLACKSTONE)));
+
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(TestingMod.MOD_ID, name))));
         registerBlockItem(name, toRegister);
@@ -46,6 +52,10 @@ public class ModBlocks {
         Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(TestingMod.MOD_ID, name),
                 new BlockItem(block, new Item.Properties().useBlockDescriptionPrefix()
                         .setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(TestingMod.MOD_ID, name)))));
+    }
+
+    public static ResourceKey<Block> getRK(Block block) {
+        return BuiltInRegistries.BLOCK.getResourceKey(block).get();
     }
 
     public static void registerModBlocks() {

@@ -28,6 +28,7 @@ public class ModCreativeModeTabs {
                 output.accept(ModBlocks.CHEESE_BLOCK);
                 output.accept(ModBlocks.RAW_CHEESE_BLOCK);
                 output.accept(ModBlocks.CHEESE_ORE);
+                output.accept(ModBlocks.BOUNTIFUL_CHEESE_ORE);
             }).build());
 
     public static void registerModCreativeModeTabs() {
