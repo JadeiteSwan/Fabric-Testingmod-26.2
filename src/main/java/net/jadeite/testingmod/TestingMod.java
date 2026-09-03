@@ -2,6 +2,7 @@ package net.jadeite.testingmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.jadeite.testingmod.block.ModBlocks;
 import net.jadeite.testingmod.creativemodetab.ModCreativeModeTabs;
 import net.jadeite.testingmod.item.ModItems;
 import net.minecraft.resources.Identifier;
@@ -17,6 +18,7 @@ public class TestingMod implements ModInitializer {
 	public void onInitialize() {
 		ModCreativeModeTabs.registerModCreativeModeTabs();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 
 	public static Identifier id(String path) {

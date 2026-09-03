@@ -2,6 +2,7 @@ package net.jadeite.testingmod.creativemodetab;
 
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.jadeite.testingmod.TestingMod;
+import net.jadeite.testingmod.block.ModBlocks;
 import net.jadeite.testingmod.item.ModItems;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -21,10 +22,12 @@ public class ModCreativeModeTabs {
             }).build());
 
     public static final CreativeModeTab CHEESE_BLOCK_TAB = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath(TestingMod.MOD_ID, "cheese_blocks"), FabricCreativeModeTab.builder()
-            .icon(() -> new ItemStack(ModItems.RAW_CHEESE_ITEM))
+            .icon(() -> new ItemStack(ModBlocks.CHEESE_BLOCK))
             .title(Component.translatable("creativemodetab.testingmod.cheese_blocks"))
             .displayItems((parameters, output) -> {
-                output.accept(ModItems.RAW_CHEESE_ITEM);
+                output.accept(ModBlocks.CHEESE_BLOCK);
+                output.accept(ModBlocks.RAW_CHEESE_BLOCK);
+                output.accept(ModBlocks.CHEESE_ORE);
             }).build());
 
     public static void registerModCreativeModeTabs() {
