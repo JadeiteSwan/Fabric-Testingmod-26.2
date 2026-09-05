@@ -1,12 +1,15 @@
 {
   "item.testingmod.cheese_item": "Cheese",
   "item.testingmod.raw_cheese_item": "Raw Cheese",
+
   "item.testingmod.chisel": "Chisel",
 
   "block.testingmod.cheese_block": "Block of Cheese",
   "block.testingmod.raw_cheese_block": "Block of Raw Cheese",
   "block.testingmod.cheese_ore": "Cheese Ore",
   "block.testingmod.bountiful_cheese_ore": "Bountiful Cheese Ore",
+
+  "block.testingmod.magic_block": "Magic Block",
 
   "creativemodetab.testingmod.cheese_items": "Cheese Items",
   "creativemodetab.testingmod.cheese_blocks": "Cheese Blocks"

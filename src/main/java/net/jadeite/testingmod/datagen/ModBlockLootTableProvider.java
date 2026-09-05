@@ -28,6 +28,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
     public void generate() {
         dropSelf(ModBlocks.CHEESE_BLOCK);
         dropSelf(ModBlocks.RAW_CHEESE_BLOCK);
+        dropSelf(ModBlocks.MAGIC_BLOCK);
 
         add(ModBlocks.CHEESE_ORE, createOreDrop(ModBlocks.CHEESE_ORE, ModItems.RAW_CHEESE_ITEM));
         add(ModBlocks.BOUNTIFUL_CHEESE_ORE, createMultipleOreDrops(ModBlocks.BOUNTIFUL_CHEESE_ORE, ModItems.RAW_CHEESE_ITEM, 3, 5));

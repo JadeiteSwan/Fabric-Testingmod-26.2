@@ -1,6 +1,7 @@
 package net.jadeite.testingmod.block;
 
 import net.jadeite.testingmod.TestingMod;
+import net.jadeite.testingmod.block.custom.MagicBlock;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -41,6 +42,12 @@ public class ModBlocks {
                     .strength(8f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.GILDED_BLACKSTONE)));
+
+    public static final Block MAGIC_BLOCK = registerBlock("magic_block",
+            properties -> new MagicBlock(properties
+                    .strength(5f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.GLASS)));
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(TestingMod.MOD_ID, name))));

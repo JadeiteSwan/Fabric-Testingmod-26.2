@@ -20,6 +20,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(ModBlocks.RAW_CHEESE_BLOCK);
         blockModelGenerators.createTrivialCube(ModBlocks.CHEESE_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.BOUNTIFUL_CHEESE_ORE);
+        blockModelGenerators.createTrivialCube(ModBlocks.MAGIC_BLOCK);
     }
 
     @Override

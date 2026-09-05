@@ -20,7 +20,8 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.CHEESE_ORE))
                 .add(ModBlocks.getRK(ModBlocks.RAW_CHEESE_BLOCK))
                 .add(ModBlocks.getRK(ModBlocks.CHEESE_BLOCK))
-                .add(ModBlocks.getRK(ModBlocks.BOUNTIFUL_CHEESE_ORE));
+                .add(ModBlocks.getRK(ModBlocks.BOUNTIFUL_CHEESE_ORE))
+                .add(ModBlocks.getRK(ModBlocks.MAGIC_BLOCK));
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.getRK(ModBlocks.CHEESE_ORE))
