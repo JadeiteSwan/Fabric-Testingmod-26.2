@@ -19,6 +19,7 @@ public class ModCreativeModeTabs {
             .displayItems((parameters, output) -> {
                 output.accept(ModItems.RAW_CHEESE_ITEM);
                 output.accept(ModItems.CHEESE_ITEM);
+                output.accept(ModItems.MELTED_CHEESE);
             }).build());
 
     public static final CreativeModeTab CHEESE_BLOCK_TAB = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath(TestingMod.MOD_ID, "cheese_blocks"), FabricCreativeModeTab.builder()
