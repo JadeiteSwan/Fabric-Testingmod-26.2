@@ -19,6 +19,7 @@ public class ModItems {
     // ITEMS
     public static final Item CHEESE_ITEM = registerItem("cheese_item", Item::new /* properties -> new Item(properties.)*/);
     public static final Item RAW_CHEESE_ITEM = registerItem("raw_cheese_item", Item::new);
+    public static final Item COAL_CHEESE = registerItem("coal_cheese", properties -> new Item(properties.stacksTo(8)));
 
     // COMPLEX ITEMS
     public static final Item CHISEL = registerItem("chisel", properties -> new ChiselItem(properties.durability(64)));

@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.jadeite.testingmod.block.ModBlocks;
 import net.jadeite.testingmod.creativemodetab.ModCreativeModeTabs;
 import net.jadeite.testingmod.item.ModItems;
+import net.jadeite.testingmod.registries.ModFuels;
 import net.minecraft.resources.Identifier;
 
 import org.slf4j.Logger;
@@ -19,6 +20,7 @@ public class TestingMod implements ModInitializer {
 		ModCreativeModeTabs.registerModCreativeModeTabs();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModFuels.registerFuels();
 	}
 
 	public static Identifier id(String path) {
