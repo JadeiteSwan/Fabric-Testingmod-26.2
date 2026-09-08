@@ -10,6 +10,7 @@ import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CookingBookCategory;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 
 import java.util.List;
@@ -53,6 +54,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Items.STICK), has(Items.STICK))
                         .group("cheese")
                         .save(output, "raw_cheese_item_from_cheese_and_stick");
+
+                stairBuilder(ModBlocks.CHEESE_STAIRS, Ingredient.of(ModBlocks.CHEESE_BLOCK))
+                        .unlockedBy(getHasName(ModBlocks.CHEESE_BLOCK), has(ModBlocks.CHEESE_BLOCK))
+                        .group("cheese")
+                        .save(output);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHEESE_SLAB, ModBlocks.CHEESE_BLOCK);
             }
         };
     }

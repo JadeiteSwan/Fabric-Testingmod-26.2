@@ -12,6 +12,9 @@
   "block.testingmod.cheese_ore": "Cheese Ore",
   "block.testingmod.bountiful_cheese_ore": "Bountiful Cheese Ore",
 
+  "block.testingmod.cheese_stairs": "Cheese Stairs",
+  "block.testingmod.cheese_slab": "Cheese Slab",
+
   "block.testingmod.magic_block": "Magic Block",
 
   "creativemodetab.testingmod.cheese_items": "Cheese Items",
@@ -20,5 +23,7 @@
   "tooltip.testingmod.chisel": "Press §eShift§r for more info!",
   "tooltip.testingmod.chisel.shift_down": "Right-clicking blocks chisels them into different blocks",
   "tooltip.testingmod.melted_cheese": "Very melted, very cheesy",
-  "tooltip.testingmod.magic_block": "Turns cheese into diamonds and gives you regen!"
+  "tooltip.testingmod.magic_block": "Turns cheese into diamonds and gives you regen!",
+
+  "tag.item.testingmod.transformable_items": "transformable_items"
 }

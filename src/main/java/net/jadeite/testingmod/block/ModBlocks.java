@@ -14,9 +14,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.TooltipDisplay;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 import java.util.function.Consumer;
@@ -24,6 +22,7 @@ import java.util.function.Function;
 
 public class ModBlocks {
 
+    // BLOCKS
     public static final Block CHEESE_BLOCK = registerBlock("cheese_block",
             properties -> new Block(properties
                     .strength(4f)
@@ -54,6 +53,20 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.GLASS)), Component.translatable("tooltip.testingmod.magic_block"));
 
+    // STAIRS AND SLABS
+    public static final Block CHEESE_STAIRS = registerBlock("cheese_stairs",
+            properties -> new StairBlock(ModBlocks.CHEESE_BLOCK.defaultBlockState(),
+                    properties.strength(2f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.CACTUS_FLOWER)));
+
+    public static final Block CHEESE_SLAB = registerBlock("cheese_slab",
+            properties -> new SlabBlock(
+                    properties.strength(2f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.CACTUS_FLOWER)));
+
+    // BLOCK TOOLTIPS
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function, Component... tooltips) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(TestingMod.MOD_ID, name))));
         registerBlockItem(name, toRegister, tooltips);
@@ -74,6 +87,7 @@ public class ModBlocks {
                 });
     }
 
+    // REGISTERING BLOCKS
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(TestingMod.MOD_ID, name))));
         registerBlockItem(name, toRegister);

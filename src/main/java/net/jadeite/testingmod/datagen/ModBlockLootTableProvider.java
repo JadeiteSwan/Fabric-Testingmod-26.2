@@ -30,6 +30,9 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.RAW_CHEESE_BLOCK);
         dropSelf(ModBlocks.MAGIC_BLOCK);
 
+        dropSelf(ModBlocks.CHEESE_STAIRS);
+        add(ModBlocks.CHEESE_SLAB, this::createSlabItemTable);
+
         add(ModBlocks.CHEESE_ORE, createOreDrop(ModBlocks.CHEESE_ORE, ModItems.RAW_CHEESE_ITEM));
         add(ModBlocks.BOUNTIFUL_CHEESE_ORE, createMultipleOreDrops(ModBlocks.BOUNTIFUL_CHEESE_ORE, ModItems.RAW_CHEESE_ITEM, 3, 5));
     }
