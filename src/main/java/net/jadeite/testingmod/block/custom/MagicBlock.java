@@ -1,6 +1,7 @@
 package net.jadeite.testingmod.block.custom;
 
 import net.jadeite.testingmod.item.ModItems;
+import net.jadeite.testingmod.tags.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.sounds.SoundEvents;
@@ -46,6 +47,6 @@ public class MagicBlock extends Block {
     }
 
     private boolean isValidItem(ItemStack item) {
-        return item.is(ModItems.CHEESE_ITEM) || item.is(ModItems.RAW_CHEESE_ITEM);
+        return item.is(ModTags.Items.TRANSFORMABLE_ITEMS);
     }
 }

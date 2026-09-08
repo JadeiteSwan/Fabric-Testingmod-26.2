@@ -58,5 +58,4 @@ public class ModItems {
             output.accept(CHISEL);
         });
     }
-
 }
