@@ -15,5 +15,10 @@
   "block.testingmod.magic_block": "Magic Block",
 
   "creativemodetab.testingmod.cheese_items": "Cheese Items",
-  "creativemodetab.testingmod.cheese_blocks": "Cheese Blocks"
+  "creativemodetab.testingmod.cheese_blocks": "Cheese Blocks",
+
+  "tooltip.testingmod.chisel": "Press §eShift§r for more info!",
+  "tooltip.testingmod.chisel.shift_down": "Right-clicking blocks chisels them into different blocks",
+  "tooltip.testingmod.melted_cheese": "Very melted, very cheesy",
+  "tooltip.testingmod.magic_block": "Turns cheese into diamonds and gives you regen!"
 }
