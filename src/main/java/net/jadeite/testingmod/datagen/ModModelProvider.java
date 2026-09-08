@@ -22,12 +22,15 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(ModBlocks.BOUNTIFUL_CHEESE_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.MAGIC_BLOCK);
 
-        // STAIRS AND SLABS
+        // STAIRS, SLABS, FENCES, AND WALLS
         blockModelGenerators.family(ModBlocks.CHEESE_BLOCK)
                 .stairs(ModBlocks.CHEESE_STAIRS)
                 .slab(ModBlocks.CHEESE_SLAB)
                 .button(ModBlocks.CHEESE_BUTTON)
-                .pressurePlate(ModBlocks.CHEESE_PRESSURE_PLATE);
+                .pressurePlate(ModBlocks.CHEESE_PRESSURE_PLATE)
+                .fence(ModBlocks.CHEESE_FENCE)
+                .fenceGate(ModBlocks.CHEESE_FENCE_GATE)
+                .wall(ModBlocks.CHEESE_WALL);
     }
 
     @Override

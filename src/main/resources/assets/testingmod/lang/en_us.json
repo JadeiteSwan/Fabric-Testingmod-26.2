@@ -20,6 +20,10 @@
   "block.testingmod.cheese_button": "Cheese Button",
   "block.testingmod.cheese_pressure_plate": "Cheese Pressure Plate",
 
+  "block.testingmod.cheese_fence": "Cheese Fence",
+  "block.testingmod.cheese_fence_gate": "Cheese Fence Gate",
+  "block.testingmod.cheese_wall": "Cheese Wall",
+
   "creativemodetab.testingmod.cheese_items": "Cheese Items",
   "creativemodetab.testingmod.cheese_blocks": "Cheese Blocks",
 

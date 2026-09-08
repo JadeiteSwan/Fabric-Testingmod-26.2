@@ -40,6 +40,11 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.CHEESE_STAIRS);
         add(ModBlocks.CHEESE_SLAB, this::createSlabItemTable);
 
+        // FENCES AND WALLS
+        dropSelf(ModBlocks.CHEESE_FENCE);
+        dropSelf(ModBlocks.CHEESE_FENCE_GATE);
+        dropSelf(ModBlocks.CHEESE_WALL);
+
         // REDSTONE BLOCKS
         dropSelf(ModBlocks.CHEESE_BUTTON);
         dropSelf(ModBlocks.CHEESE_PRESSURE_PLATE);

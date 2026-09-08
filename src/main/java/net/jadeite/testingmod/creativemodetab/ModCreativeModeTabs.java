@@ -39,6 +39,11 @@ public class ModCreativeModeTabs {
                 output.accept(ModBlocks.CHEESE_STAIRS);
                 output.accept(ModBlocks.CHEESE_SLAB);
 
+                // FENCES AND WALLS
+                output.accept(ModBlocks.CHEESE_FENCE);
+                output.accept(ModBlocks.CHEESE_FENCE_GATE);
+                output.accept(ModBlocks.CHEESE_WALL);
+
                 // REDSTONE BLOCKS
                 output.accept(ModBlocks.CHEESE_BUTTON);
                 output.accept(ModBlocks.CHEESE_PRESSURE_PLATE);

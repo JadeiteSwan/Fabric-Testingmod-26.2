@@ -18,6 +18,7 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 
@@ -69,6 +70,19 @@ public class ModBlocks {
                     properties.strength(2f)
                             .requiresCorrectToolForDrops()
                             .sound(SoundType.CACTUS_FLOWER)));
+
+    // FENCES AND WALLS
+    public static final Block CHEESE_FENCE = registerBlock("cheese_fence",
+            properties -> new FenceBlock(properties
+                    .strength(3f)));
+
+    public static final Block CHEESE_FENCE_GATE = registerBlock("cheese_fence_gate",
+            properties -> new FenceGateBlock(WoodType.BAMBOO, properties
+                    .strength(3f)));
+
+    public static final Block CHEESE_WALL = registerBlock("cheese_wall",
+            properties -> new WallBlock(properties
+                    .strength(3f)));
 
     // REDSTONE BLOCKS
     public static final Block CHEESE_BUTTON = registerBlock("cheese_button",

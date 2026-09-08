@@ -68,6 +68,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .save(output);
 
                 pressurePlate(ModBlocks.CHEESE_PRESSURE_PLATE, ModItems.CHEESE_ITEM);
+
+                fenceBuilder(ModBlocks.CHEESE_FENCE, Ingredient.of(ModBlocks.CHEESE_BLOCK))
+                        .unlockedBy(getHasName(ModBlocks.CHEESE_BLOCK), has(ModBlocks.CHEESE_BLOCK))
+                        .group("cheese")
+                        .save(output);
+
+                fenceGateBuilder(ModBlocks.CHEESE_FENCE_GATE, Ingredient.of(ModBlocks.CHEESE_BLOCK))
+                        .unlockedBy(getHasName(ModBlocks.CHEESE_BLOCK), has(ModBlocks.CHEESE_BLOCK))
+                        .group("cheese")
+                        .save(output);
+
+                wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHEESE_WALL, ModBlocks.CHEESE_BLOCK);
             }
         };
     }

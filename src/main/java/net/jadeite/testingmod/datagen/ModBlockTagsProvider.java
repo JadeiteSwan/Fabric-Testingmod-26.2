@@ -43,5 +43,14 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
         tag(BlockTags.PRESSURE_PLATES)
                 .add(ModBlocks.getRK(ModBlocks.CHEESE_PRESSURE_PLATE));
+
+        tag(BlockTags.FENCES)
+                .add(ModBlocks.getRK(ModBlocks.CHEESE_FENCE));
+
+        tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.getRK(ModBlocks.CHEESE_FENCE_GATE));
+
+        tag(BlockTags.WALLS)
+                .add(ModBlocks.getRK(ModBlocks.CHEESE_WALL));
     }
 }
