@@ -12,10 +12,13 @@
   "block.testingmod.cheese_ore": "Cheese Ore",
   "block.testingmod.bountiful_cheese_ore": "Bountiful Cheese Ore",
 
+  "block.testingmod.magic_block": "Magic Block",
+
   "block.testingmod.cheese_stairs": "Cheese Stairs",
   "block.testingmod.cheese_slab": "Cheese Slab",
 
-  "block.testingmod.magic_block": "Magic Block",
+  "block.testingmod.cheese_button": "Cheese Button",
+  "block.testingmod.cheese_pressure_plate": "Cheese Pressure Plate",
 
   "creativemodetab.testingmod.cheese_items": "Cheese Items",
   "creativemodetab.testingmod.cheese_blocks": "Cheese Blocks",

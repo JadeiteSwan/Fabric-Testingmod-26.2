@@ -61,6 +61,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .save(output);
 
                 slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHEESE_SLAB, ModBlocks.CHEESE_BLOCK);
+
+                buttonBuilder(ModBlocks.CHEESE_BUTTON, Ingredient.of(ModItems.CHEESE_ITEM))
+                        .unlockedBy(getHasName(ModItems.CHEESE_ITEM), has(ModItems.CHEESE_ITEM))
+                        .group("cheese")
+                        .save(output);
+
+                pressurePlate(ModBlocks.CHEESE_PRESSURE_PLATE, ModItems.CHEESE_ITEM);
             }
         };
     }

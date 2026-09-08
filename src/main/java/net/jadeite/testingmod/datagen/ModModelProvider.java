@@ -25,7 +25,9 @@ public class ModModelProvider extends FabricModelProvider {
         // STAIRS AND SLABS
         blockModelGenerators.family(ModBlocks.CHEESE_BLOCK)
                 .stairs(ModBlocks.CHEESE_STAIRS)
-                .slab(ModBlocks.CHEESE_SLAB);
+                .slab(ModBlocks.CHEESE_SLAB)
+                .button(ModBlocks.CHEESE_BUTTON)
+                .pressurePlate(ModBlocks.CHEESE_PRESSURE_PLATE);
     }
 
     @Override

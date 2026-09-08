@@ -37,5 +37,11 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
         tag(BlockTags.SLABS)
                 .add(ModBlocks.getRK(ModBlocks.CHEESE_SLAB));
+
+        tag(BlockTags.BUTTONS)
+                .add(ModBlocks.getRK(ModBlocks.CHEESE_BUTTON));
+
+        tag(BlockTags.PRESSURE_PLATES)
+                .add(ModBlocks.getRK(ModBlocks.CHEESE_PRESSURE_PLATE));
     }
 }

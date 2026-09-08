@@ -16,6 +16,10 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 
 import java.util.function.Consumer;
 import java.util.function.Function;
@@ -65,6 +69,24 @@ public class ModBlocks {
                     properties.strength(2f)
                             .requiresCorrectToolForDrops()
                             .sound(SoundType.CACTUS_FLOWER)));
+
+    // REDSTONE BLOCKS
+    public static final Block CHEESE_BUTTON = registerBlock("cheese_button",
+            properties -> new ButtonBlock(
+                    BlockSetType.IRON,
+                    40,
+                    properties.strength(2f)
+                            .noCollision()));
+
+    public static final Block CHEESE_PRESSURE_PLATE = registerBlock("cheese_pressure_plate",
+            properties -> new PressurePlateBlock(
+                    BlockSetType.IRON,
+                    properties.mapColor(MapColor.COLOR_YELLOW)
+                            .forceSolidOn()
+                            .instrument(NoteBlockInstrument.BASS)
+                            .noCollision()
+                            .strength(1f)
+                            .pushReaction(PushReaction.DESTROY)));
 
     // BLOCK TOOLTIPS
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function, Component... tooltips) {

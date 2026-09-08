@@ -27,14 +27,22 @@ public class ModCreativeModeTabs {
             .icon(() -> new ItemStack(ModBlocks.CHEESE_BLOCK))
             .title(Component.translatable("creativemodetab.testingmod.cheese_blocks"))
             .displayItems((parameters, output) -> {
+
+                // BLOCKS
                 output.accept(ModBlocks.CHEESE_BLOCK);
                 output.accept(ModBlocks.RAW_CHEESE_BLOCK);
                 output.accept(ModBlocks.CHEESE_ORE);
                 output.accept(ModBlocks.BOUNTIFUL_CHEESE_ORE);
                 output.accept(ModBlocks.MAGIC_BLOCK);
 
+                // STAIRS AND SLABS
                 output.accept(ModBlocks.CHEESE_STAIRS);
                 output.accept(ModBlocks.CHEESE_SLAB);
+
+                // REDSTONE BLOCKS
+                output.accept(ModBlocks.CHEESE_BUTTON);
+                output.accept(ModBlocks.CHEESE_PRESSURE_PLATE);
+
             }).build());
 
     public static void registerModCreativeModeTabs() {
