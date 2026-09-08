@@ -23,7 +23,12 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.BOUNTIFUL_CHEESE_ORE))
                 .add(ModBlocks.getRK(ModBlocks.MAGIC_BLOCK))
                 .add(ModBlocks.getRK(ModBlocks.CHEESE_STAIRS))
-                .add(ModBlocks.getRK(ModBlocks.CHEESE_SLAB));
+                .add(ModBlocks.getRK(ModBlocks.CHEESE_SLAB))
+                .add(ModBlocks.getRK(ModBlocks.CHEESE_FENCE))
+                .add(ModBlocks.getRK(ModBlocks.CHEESE_FENCE_GATE))
+                .add(ModBlocks.getRK(ModBlocks.CHEESE_WALL))
+                .add(ModBlocks.getRK(ModBlocks.CHEESE_DOOR))
+                .add(ModBlocks.getRK(ModBlocks.CHEESE_TRAPDOOR));
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.getRK(ModBlocks.CHEESE_ORE))
@@ -52,5 +57,11 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
         tag(BlockTags.WALLS)
                 .add(ModBlocks.getRK(ModBlocks.CHEESE_WALL));
+
+        tag(BlockTags.DOORS)
+                .add(ModBlocks.getRK(ModBlocks.CHEESE_DOOR));
+
+        tag(BlockTags.TRAPDOORS)
+                .add(ModBlocks.getRK(ModBlocks.CHEESE_TRAPDOOR));
     }
 }

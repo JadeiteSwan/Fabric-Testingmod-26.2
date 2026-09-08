@@ -31,6 +31,10 @@ public class ModModelProvider extends FabricModelProvider {
                 .fence(ModBlocks.CHEESE_FENCE)
                 .fenceGate(ModBlocks.CHEESE_FENCE_GATE)
                 .wall(ModBlocks.CHEESE_WALL);
+
+        // DOORS AND TRAPDOORS
+        blockModelGenerators.createDoor(ModBlocks.CHEESE_DOOR);
+        blockModelGenerators.createTrapdoor(ModBlocks.CHEESE_TRAPDOOR);
     }
 
     @Override

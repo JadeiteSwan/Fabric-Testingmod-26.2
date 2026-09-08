@@ -24,6 +24,9 @@
   "block.testingmod.cheese_fence_gate": "Cheese Fence Gate",
   "block.testingmod.cheese_wall": "Cheese Wall",
 
+  "block.testingmod.cheese_door": "Cheese Door",
+  "block.testingmod.cheese_trapdoor": "Cheese Trapdoor",
+
   "creativemodetab.testingmod.cheese_items": "Cheese Items",
   "creativemodetab.testingmod.cheese_blocks": "Cheese Blocks",
 

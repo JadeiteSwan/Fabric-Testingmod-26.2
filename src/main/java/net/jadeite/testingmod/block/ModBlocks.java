@@ -84,6 +84,19 @@ public class ModBlocks {
             properties -> new WallBlock(properties
                     .strength(3f)));
 
+    // DOORS AND TRAPDOORS
+    public static final Block CHEESE_DOOR = registerBlock("cheese_door",
+            properties -> new DoorBlock(BlockSetType.IRON, properties
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .noOcclusion()));
+
+    public static final Block CHEESE_TRAPDOOR = registerBlock("cheese_trapdoor",
+            properties -> new TrapDoorBlock(BlockSetType.IRON, properties
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .noOcclusion()));
+
     // REDSTONE BLOCKS
     public static final Block CHEESE_BUTTON = registerBlock("cheese_button",
             properties -> new ButtonBlock(

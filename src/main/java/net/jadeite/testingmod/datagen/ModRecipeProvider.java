@@ -80,6 +80,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .save(output);
 
                 wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHEESE_WALL, ModBlocks.CHEESE_BLOCK);
+
+                doorBuilder(ModBlocks.CHEESE_DOOR, Ingredient.of(ModBlocks.CHEESE_BLOCK))
+                        .unlockedBy(getHasName(ModBlocks.CHEESE_BLOCK), has(ModBlocks.CHEESE_BLOCK))
+                        .group("cheese")
+                        .save(output);
+
+                trapdoorBuilder(ModBlocks.CHEESE_TRAPDOOR, Ingredient.of(ModItems.CHEESE_ITEM))
+                        .unlockedBy(getHasName(ModItems.CHEESE_ITEM), has(ModItems.CHEESE_ITEM))
+                        .group("cheese")
+                        .save(output);
             }
         };
     }
