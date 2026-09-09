@@ -37,5 +37,17 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
 
         tag(ItemTags.SPEARS)
                 .add(ModItems.getRK(ModItems.CHEESE_SPEAR));
+
+        tag(ItemTags.HEAD_ARMOR)
+                .add(ModItems.getRK(ModItems.CHEESE_HELMET));
+
+        tag(ItemTags.CHEST_ARMOR)
+                .add(ModItems.getRK(ModItems.CHEESE_CHESTPLATE));
+
+        tag(ItemTags.LEG_ARMOR)
+                .add(ModItems.getRK(ModItems.CHEESE_LEGGINGS));
+
+        tag(ItemTags.FOOT_ARMOR)
+                .add(ModItems.getRK(ModItems.CHEESE_BOOTS));
     }
 }

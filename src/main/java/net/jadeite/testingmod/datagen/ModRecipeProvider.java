@@ -150,6 +150,40 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(ModItems.CHEESE_ITEM), has(ModItems.CHEESE_ITEM))
                         .group("cheese")
                         .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.CHEESE_HELMET)
+                        .pattern("CCC")
+                        .pattern("C C")
+                        .define('C', ModItems.CHEESE_ITEM)
+                        .unlockedBy(getHasName(ModItems.CHEESE_ITEM), has(ModItems.CHEESE_ITEM))
+                        .group("cheese")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.CHEESE_CHESTPLATE)
+                        .pattern("C C")
+                        .pattern("CCC")
+                        .pattern("CCC")
+                        .define('C', ModItems.CHEESE_ITEM)
+                        .unlockedBy(getHasName(ModItems.CHEESE_ITEM), has(ModItems.CHEESE_ITEM))
+                        .group("cheese")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.CHEESE_LEGGINGS)
+                        .pattern("CCC")
+                        .pattern("C C")
+                        .pattern("C C")
+                        .define('C', ModItems.CHEESE_ITEM)
+                        .unlockedBy(getHasName(ModItems.CHEESE_ITEM), has(ModItems.CHEESE_ITEM))
+                        .group("cheese")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.CHEESE_BOOTS)
+                        .pattern("C C")
+                        .pattern("C C")
+                        .define('C', ModItems.CHEESE_ITEM)
+                        .unlockedBy(getHasName(ModItems.CHEESE_ITEM), has(ModItems.CHEESE_ITEM))
+                        .group("cheese")
+                        .save(output);
             }
         };
     }

@@ -14,6 +14,11 @@
   "item.testingmod.cheese_hoe": "Cheese Hoe",
   "item.testingmod.cheese_spear": "Cheese Spear",
 
+  "item.testingmod.cheese_helmet": "Cheese Helmet",
+  "item.testingmod.cheese_chestplate": "Cheese Chestplate",
+  "item.testingmod.cheese_leggings": "Cheese Leggings",
+  "item.testingmod.cheese_boots": "Cheese Boots",
+
   "block.testingmod.cheese_block": "Block of Cheese",
   "block.testingmod.raw_cheese_block": "Block of Raw Cheese",
   "block.testingmod.cheese_ore": "Cheese Ore",

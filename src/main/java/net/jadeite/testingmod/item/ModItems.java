@@ -12,6 +12,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.TooltipDisplay;
+import net.minecraft.world.item.equipment.ArmorType;
 
 import java.util.function.Consumer;
 import java.util.function.Function;
@@ -43,6 +44,13 @@ public class ModItems {
     public static final Item CHEESE_SHOVEL = registerItem("cheese_shovel", properties -> new ShovelItem(ModToolMaterials.CHEESE, 1, -2.8f, properties));
     public static final Item CHEESE_HOE = registerItem("cheese_hoe", properties -> new HoeItem(ModToolMaterials.CHEESE, 1, -2.8f, properties));
     public static final Item CHEESE_SPEAR = registerItem("cheese_spear", properties -> new Item(properties.spear(ModToolMaterials.CHEESE, 0.95f, -0.95f, 0.6f, 2.5f, 11.0f, 6.75f, 5.1f, 11.25f, 4.6f)));
+
+    // EQUIPMENT
+
+    public static final Item CHEESE_HELMET = registerItem("cheese_helmet", properties -> new Item(properties.humanoidArmor(ModArmorMaterials.CHEESE_ARMOR_MATERIAL, ArmorType.HELMET)));
+    public static final Item CHEESE_CHESTPLATE = registerItem("cheese_chestplate", properties -> new Item(properties.humanoidArmor(ModArmorMaterials.CHEESE_ARMOR_MATERIAL, ArmorType.CHESTPLATE)));
+    public static final Item CHEESE_LEGGINGS = registerItem("cheese_leggings", properties -> new Item(properties.humanoidArmor(ModArmorMaterials.CHEESE_ARMOR_MATERIAL, ArmorType.LEGGINGS)));
+    public static final Item CHEESE_BOOTS = registerItem("cheese_boots", properties -> new Item(properties.humanoidArmor(ModArmorMaterials.CHEESE_ARMOR_MATERIAL, ArmorType.BOOTS)));
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(TestingMod.MOD_ID, name), function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(TestingMod.MOD_ID, name)))));

@@ -3,6 +3,7 @@ package net.jadeite.testingmod.datagen;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.jadeite.testingmod.block.ModBlocks;
+import net.jadeite.testingmod.item.ModArmorMaterials;
 import net.jadeite.testingmod.item.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
@@ -57,5 +58,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.CHEESE_SHOVEL, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.CHEESE_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModelGenerators.generateSpear(ModItems.CHEESE_SPEAR);
+
+        // EQUIPMENT
+        itemModelGenerators.generateTrimmableItem(ModItems.CHEESE_HELMET, ModArmorMaterials.CHEESE_KEY, ItemModelGenerators.TRIM_PREFIX_HELMET, false);
+        itemModelGenerators.generateTrimmableItem(ModItems.CHEESE_CHESTPLATE, ModArmorMaterials.CHEESE_KEY, ItemModelGenerators.TRIM_PREFIX_CHESTPLATE, false);
+        itemModelGenerators.generateTrimmableItem(ModItems.CHEESE_LEGGINGS, ModArmorMaterials.CHEESE_KEY, ItemModelGenerators.TRIM_PREFIX_LEGGINGS, false);
+        itemModelGenerators.generateTrimmableItem(ModItems.CHEESE_BOOTS, ModArmorMaterials.CHEESE_KEY, ItemModelGenerators.TRIM_PREFIX_BOOTS, false);
     }
 }
