@@ -90,6 +90,66 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(ModItems.CHEESE_ITEM), has(ModItems.CHEESE_ITEM))
                         .group("cheese")
                         .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.CHEESE_SWORD)
+                        .pattern("C")
+                        .pattern("C")
+                        .pattern("S")
+                        .define('C', ModItems.CHEESE_ITEM)
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.CHEESE_ITEM), has(ModItems.CHEESE_ITEM))
+                        .group("cheese")
+                        .save(output);
+
+                shaped(RecipeCategory.TOOLS, ModItems.CHEESE_PICKAXE)
+                        .pattern("CCC")
+                        .pattern(" S ")
+                        .pattern(" S ")
+                        .define('C', ModItems.CHEESE_ITEM)
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.CHEESE_ITEM), has(ModItems.CHEESE_ITEM))
+                        .group("cheese")
+                        .save(output);
+
+                shaped(RecipeCategory.TOOLS, ModItems.CHEESE_AXE)
+                        .pattern("CC")
+                        .pattern("SC")
+                        .pattern("S ")
+                        .define('C', ModItems.CHEESE_ITEM)
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.CHEESE_ITEM), has(ModItems.CHEESE_ITEM))
+                        .group("cheese")
+                        .save(output);
+
+                shaped(RecipeCategory.TOOLS, ModItems.CHEESE_SHOVEL)
+                        .pattern("C")
+                        .pattern("S")
+                        .pattern("S")
+                        .define('C', ModItems.CHEESE_ITEM)
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.CHEESE_ITEM), has(ModItems.CHEESE_ITEM))
+                        .group("cheese")
+                        .save(output);
+
+                shaped(RecipeCategory.TOOLS, ModItems.CHEESE_HOE)
+                        .pattern("CC")
+                        .pattern("S ")
+                        .pattern("S ")
+                        .define('C', ModItems.CHEESE_ITEM)
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.CHEESE_ITEM), has(ModItems.CHEESE_ITEM))
+                        .group("cheese")
+                        .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.CHEESE_SPEAR)
+                        .pattern("  C")
+                        .pattern(" S ")
+                        .pattern("S  ")
+                        .define('C', ModItems.CHEESE_ITEM)
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.CHEESE_ITEM), has(ModItems.CHEESE_ITEM))
+                        .group("cheese")
+                        .save(output);
             }
         };
     }

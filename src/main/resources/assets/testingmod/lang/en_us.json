@@ -7,6 +7,13 @@
 
   "item.testingmod.melted_cheese": "Melted Cheese",
 
+  "item.testingmod.cheese_sword": "Cheese Sword",
+  "item.testingmod.cheese_pickaxe": "Cheese Pickaxe",
+  "item.testingmod.cheese_axe": "Cheese Axe",
+  "item.testingmod.cheese_shovel": "Cheese Shovel",
+  "item.testingmod.cheese_hoe": "Cheese Hoe",
+  "item.testingmod.cheese_spear": "Cheese Spear",
+
   "block.testingmod.cheese_block": "Block of Cheese",
   "block.testingmod.raw_cheese_block": "Block of Raw Cheese",
   "block.testingmod.cheese_ore": "Cheese Ore",
@@ -29,6 +36,7 @@
 
   "creativemodetab.testingmod.cheese_items": "Cheese Items",
   "creativemodetab.testingmod.cheese_blocks": "Cheese Blocks",
+  "creativemodetab.testingmod.cheese_tools": "Cheese Tools",
 
   "tooltip.testingmod.chisel": "Press §eShift§r for more info!",
   "tooltip.testingmod.chisel.shift_down": "Right-clicking blocks chisels them into different blocks",

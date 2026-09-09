@@ -10,10 +10,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.TooltipDisplay;
 
 import java.util.function.Consumer;
@@ -38,6 +35,15 @@ public class ModItems {
         }
     });
 
+    // TOOLS AND WEAPONS
+
+    public static final Item CHEESE_SWORD = registerItem("cheese_sword", properties -> new Item(properties.sword(ModToolMaterials.CHEESE, 4, -3f)));
+    public static final Item CHEESE_PICKAXE = registerItem("cheese_pickaxe", properties -> new Item(properties.pickaxe(ModToolMaterials.CHEESE, 1, -2.8f)));
+    public static final Item CHEESE_AXE = registerItem("cheese_axe", properties -> new AxeItem(ModToolMaterials.CHEESE, 5, -3.4f, properties));
+    public static final Item CHEESE_SHOVEL = registerItem("cheese_shovel", properties -> new ShovelItem(ModToolMaterials.CHEESE, 1, -2.8f, properties));
+    public static final Item CHEESE_HOE = registerItem("cheese_hoe", properties -> new HoeItem(ModToolMaterials.CHEESE, 1, -2.8f, properties));
+    public static final Item CHEESE_SPEAR = registerItem("cheese_spear", properties -> new Item(properties.spear(ModToolMaterials.CHEESE, 0.95f, -0.95f, 0.6f, 2.5f, 11.0f, 6.75f, 5.1f, 11.25f, 4.6f)));
+
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(TestingMod.MOD_ID, name), function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(TestingMod.MOD_ID, name)))));
     }
@@ -52,10 +58,6 @@ public class ModItems {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS).register(output -> {
             output.accept(CHEESE_ITEM);
             output.accept(RAW_CHEESE_ITEM);
-        });
-
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register(output -> {
-            output.accept(CHISEL);
         });
     }
 }

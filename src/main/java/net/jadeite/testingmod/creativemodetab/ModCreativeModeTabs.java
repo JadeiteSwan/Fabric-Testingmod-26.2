@@ -54,6 +54,19 @@ public class ModCreativeModeTabs {
 
             }).build());
 
+    public static final CreativeModeTab CHEESE_TOOL_TAB = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath(TestingMod.MOD_ID, "cheese_tools"), FabricCreativeModeTab.builder()
+            .icon(() -> new ItemStack(ModItems.CHISEL))
+            .title(Component.translatable("creativemodetab.testingmod.cheese_tools"))
+            .displayItems((parameters, output) -> {
+                output.accept(ModItems.CHEESE_SWORD);
+                output.accept(ModItems.CHEESE_PICKAXE);
+                output.accept(ModItems.CHEESE_AXE);
+                output.accept(ModItems.CHEESE_SHOVEL);
+                output.accept(ModItems.CHEESE_HOE);
+                output.accept(ModItems.CHEESE_SPEAR);
+                output.accept(ModItems.CHISEL);
+            }).build());
+
     public static void registerModCreativeModeTabs() {
         TestingMod.LOGGER.info("Registering Creative Mode Tabs for " + TestingMod.MOD_ID);
     }

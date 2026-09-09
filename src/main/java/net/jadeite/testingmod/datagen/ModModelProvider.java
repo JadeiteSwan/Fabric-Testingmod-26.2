@@ -49,5 +49,13 @@ public class ModModelProvider extends FabricModelProvider {
 
         // FOODS
         itemModelGenerators.generateFlatItem(ModItems.MELTED_CHEESE, ModelTemplates.FLAT_ITEM);
+
+        // TOOLS AND WEAPONS
+        itemModelGenerators.generateFlatItem(ModItems.CHEESE_SWORD, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.CHEESE_PICKAXE, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.CHEESE_AXE, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.CHEESE_SHOVEL, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.CHEESE_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateSpear(ModItems.CHEESE_SPEAR);
     }
 }
