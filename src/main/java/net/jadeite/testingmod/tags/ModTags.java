@@ -28,8 +28,4 @@ public class ModTags {
             return TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(TestingMod.MOD_ID, name));
         }
     }
-
-
-
-
 }

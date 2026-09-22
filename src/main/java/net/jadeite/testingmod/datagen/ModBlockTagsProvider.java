@@ -18,9 +18,21 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider registries) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                // ORES
                 .add(ModBlocks.getRK(ModBlocks.CHEESE_ORE))
                 .add(ModBlocks.getRK(ModBlocks.BOUNTIFUL_CHEESE_ORE))
                 .add(ModBlocks.getRK(ModBlocks.RAW_CHEESE_BLOCK))
+                .add(ModBlocks.getRK(ModBlocks.TIN_ORE))
+                .add(ModBlocks.getRK(ModBlocks.LEAD_ORE))
+                .add(ModBlocks.getRK(ModBlocks.BAUXITE_ORE))
+                .add(ModBlocks.getRK(ModBlocks.ZINC_ORE))
+                .add(ModBlocks.getRK(ModBlocks.NICKEL_ORE))
+                .add(ModBlocks.getRK(ModBlocks.SILVER_ORE))
+                .add(ModBlocks.getRK(ModBlocks.PLATINUM_ORE))
+                .add(ModBlocks.getRK(ModBlocks.LITHIUM_ORE))
+                .add(ModBlocks.getRK(ModBlocks.CHROMIUM_ORE))
+
+                // BLOCKS
                 .add(ModBlocks.getRK(ModBlocks.CHEESE_BLOCK))
                 .add(ModBlocks.getRK(ModBlocks.MAGIC_BLOCK))
                 .add(ModBlocks.getRK(ModBlocks.CHEESE_STAIRS))

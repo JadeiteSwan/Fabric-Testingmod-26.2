@@ -23,6 +23,15 @@
   "block.testingmod.raw_cheese_block": "Block of Raw Cheese",
   "block.testingmod.cheese_ore": "Cheese Ore",
   "block.testingmod.bountiful_cheese_ore": "Bountiful Cheese Ore",
+  "block.testingmod.tin_ore": "Tin Ore",
+  "block.testingmod.lead_ore": "Lead Ore",
+  "block.testingmod.bauxite_ore": "Bauxite Ore",
+  "block.testingmod.zinc_ore": "Zinc Ore",
+  "block.testingmod.nickel_ore": "Nickel Ore",
+  "block.testingmod.silver_ore": "Silver Ore",
+  "block.testingmod.platinum_ore": "Platinum Ore",
+  "block.testingmod.lithium_ore": "Lithium Ore",
+  "block.testingmod.chromium_ore": "Chromium Ore",
 
   "block.testingmod.magic_block": "Magic Block",
 

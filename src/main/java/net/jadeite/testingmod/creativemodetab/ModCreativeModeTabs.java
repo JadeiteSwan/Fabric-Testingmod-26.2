@@ -33,6 +33,15 @@ public class ModCreativeModeTabs {
                 output.accept(ModBlocks.RAW_CHEESE_BLOCK);
                 output.accept(ModBlocks.CHEESE_ORE);
                 output.accept(ModBlocks.BOUNTIFUL_CHEESE_ORE);
+                output.accept(ModBlocks.TIN_ORE);
+                output.accept(ModBlocks.LEAD_ORE);
+                output.accept(ModBlocks.BAUXITE_ORE);
+                output.accept(ModBlocks.ZINC_ORE);
+                output.accept(ModBlocks.NICKEL_ORE);
+                output.accept(ModBlocks.SILVER_ORE);
+                output.accept(ModBlocks.PLATINUM_ORE);
+                output.accept(ModBlocks.LITHIUM_ORE);
+                output.accept(ModBlocks.CHROMIUM_ORE);
                 output.accept(ModBlocks.MAGIC_BLOCK);
 
                 // STAIRS AND SLABS

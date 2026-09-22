@@ -35,6 +35,15 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         // ORES
         add(ModBlocks.CHEESE_ORE, createOreDrop(ModBlocks.CHEESE_ORE, ModItems.RAW_CHEESE_ITEM));
         add(ModBlocks.BOUNTIFUL_CHEESE_ORE, createMultipleOreDrops(ModBlocks.BOUNTIFUL_CHEESE_ORE, ModItems.RAW_CHEESE_ITEM, 3, 5));
+        add(ModBlocks.TIN_ORE, createOreDrop(ModBlocks.TIN_ORE, ModItems.RAW_CHEESE_ITEM));
+        add(ModBlocks.LEAD_ORE, createOreDrop(ModBlocks.LEAD_ORE, ModItems.RAW_CHEESE_ITEM));
+        add(ModBlocks.BAUXITE_ORE, createOreDrop(ModBlocks.BAUXITE_ORE, ModItems.RAW_CHEESE_ITEM));
+        add(ModBlocks.ZINC_ORE, createOreDrop(ModBlocks.ZINC_ORE, ModItems.RAW_CHEESE_ITEM));
+        add(ModBlocks.NICKEL_ORE, createOreDrop(ModBlocks.NICKEL_ORE, ModItems.RAW_CHEESE_ITEM));
+        add(ModBlocks.SILVER_ORE, createOreDrop(ModBlocks.SILVER_ORE, ModItems.RAW_CHEESE_ITEM));
+        add(ModBlocks.PLATINUM_ORE, createOreDrop(ModBlocks.PLATINUM_ORE, ModItems.RAW_CHEESE_ITEM));
+        add(ModBlocks.LITHIUM_ORE, createOreDrop(ModBlocks.LITHIUM_ORE, ModItems.RAW_CHEESE_ITEM));
+        add(ModBlocks.CHROMIUM_ORE, createOreDrop(ModBlocks.CHROMIUM_ORE, ModItems.RAW_CHEESE_ITEM));
 
         // STAIRS AND SLABS
         dropSelf(ModBlocks.CHEESE_STAIRS);
