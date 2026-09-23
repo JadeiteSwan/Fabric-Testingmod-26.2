@@ -3,8 +3,6 @@
   "item.testingmod.raw_cheese_item": "Raw Cheese",
   "item.testingmod.coal_cheese": "Coal Cheese",
 
-  "item.testingmod.chisel": "Chisel",
-
   "item.testingmod.melted_cheese": "Melted Cheese",
 
   "item.testingmod.cheese_sword": "Cheese Sword",
@@ -13,6 +11,8 @@
   "item.testingmod.cheese_shovel": "Cheese Shovel",
   "item.testingmod.cheese_hoe": "Cheese Hoe",
   "item.testingmod.cheese_spear": "Cheese Spear",
+  "item.testingmod.chisel": "Chisel",
+  "item.testingmod.cheese_paxel": "Cheese Paxel",
 
   "item.testingmod.cheese_helmet": "Cheese Helmet",
   "item.testingmod.cheese_chestplate": "Cheese Chestplate",

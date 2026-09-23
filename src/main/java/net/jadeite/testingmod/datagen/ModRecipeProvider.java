@@ -151,6 +151,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("cheese")
                         .save(output);
 
+                shaped(RecipeCategory.TOOLS, ModItems.CHEESE_PAXEL)
+                        .pattern("PAS")
+                        .pattern(" I ")
+                        .pattern(" I ")
+                        .define('P', ModItems.CHEESE_PICKAXE)
+                        .define('A', ModItems.CHEESE_AXE)
+                        .define('S', ModItems.CHEESE_SHOVEL)
+                        .define('I', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.CHEESE_PICKAXE), has(ModItems.CHEESE_PICKAXE))
+                        .unlockedBy(getHasName(ModItems.CHEESE_AXE), has(ModItems.CHEESE_AXE))
+                        .unlockedBy(getHasName(ModItems.CHEESE_SHOVEL), has(ModItems.CHEESE_SHOVEL))
+                        .group("cheese")
+                        .save(output);
+
                 shaped(RecipeCategory.COMBAT, ModItems.CHEESE_HELMET)
                         .pattern("CCC")
                         .pattern("C C")

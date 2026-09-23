@@ -67,6 +67,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.CHEESE_SHOVEL, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.CHEESE_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModelGenerators.generateSpear(ModItems.CHEESE_SPEAR);
+        itemModelGenerators.generateFlatItem(ModItems.CHEESE_PAXEL, ModelTemplates.FLAT_HANDHELD_ITEM);
 
         // EQUIPMENT
         itemModelGenerators.generateTrimmableItem(ModItems.CHEESE_HELMET, ModArmorMaterials.CHEESE_KEY, ItemModelGenerators.TRIM_PREFIX_HELMET, false);

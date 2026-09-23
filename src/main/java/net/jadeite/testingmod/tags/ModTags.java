@@ -14,6 +14,8 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_CHEESE_TOOL = createTag("needs_cheese_tool");
         public static final TagKey<Block> INCORRECT_FOR_CHEESE_TOOL = createTag("incorrect_for_cheese_tool");
 
+        public static final TagKey<Block> PAXEL_MINEABLE = createTag("mineable/paxel");
+
         private static TagKey<Block> createTag(String name) {
             return TagKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(TestingMod.MOD_ID, name));
         }

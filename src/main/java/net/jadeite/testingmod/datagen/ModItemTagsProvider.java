@@ -24,13 +24,16 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ModItems.getRK(ModItems.CHEESE_SWORD));
 
         tag(ItemTags.PICKAXES)
-                .add(ModItems.getRK(ModItems.CHEESE_PICKAXE));
+                .add(ModItems.getRK(ModItems.CHEESE_PICKAXE))
+                .add(ModItems.getRK(ModItems.CHEESE_PAXEL));
 
         tag(ItemTags.AXES)
-                .add(ModItems.getRK(ModItems.CHEESE_AXE));
+                .add(ModItems.getRK(ModItems.CHEESE_AXE))
+                .add(ModItems.getRK(ModItems.CHEESE_PAXEL));
 
         tag(ItemTags.SHOVELS)
-                .add(ModItems.getRK(ModItems.CHEESE_SHOVEL));
+                .add(ModItems.getRK(ModItems.CHEESE_SHOVEL))
+                .add(ModItems.getRK(ModItems.CHEESE_PAXEL));
 
         tag(ItemTags.HOES)
                 .add(ModItems.getRK(ModItems.CHEESE_HOE));

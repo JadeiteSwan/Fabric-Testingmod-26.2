@@ -93,5 +93,10 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
         tag(BlockTags.TRAPDOORS)
                 .add(ModBlocks.getRK(ModBlocks.CHEESE_TRAPDOOR));
+
+        tag(ModTags.Blocks.PAXEL_MINEABLE)
+                .forceAddTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .forceAddTag(BlockTags.MINEABLE_WITH_AXE)
+                .forceAddTag(BlockTags.MINEABLE_WITH_SHOVEL);
     }
 }
