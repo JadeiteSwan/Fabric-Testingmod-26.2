@@ -165,6 +165,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("cheese")
                         .save(output);
 
+                shaped(RecipeCategory.TOOLS, ModItems.CHEESE_HAMMER)
+                        .pattern("CCC")
+                        .pattern("CSC")
+                        .pattern(" S ")
+                        .define('C', ModBlocks.CHEESE_BLOCK)
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.CHEESE_ITEM), has(ModItems.CHEESE_ITEM))
+                        .group("cheese")
+                        .save(output);
+
                 shaped(RecipeCategory.COMBAT, ModItems.CHEESE_HELMET)
                         .pattern("CCC")
                         .pattern("C C")

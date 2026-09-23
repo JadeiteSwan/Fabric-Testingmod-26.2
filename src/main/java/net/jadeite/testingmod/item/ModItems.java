@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.jadeite.testingmod.TestingMod;
 import net.jadeite.testingmod.food.ModFoods;
 import net.jadeite.testingmod.item.custom.ChiselItem;
+import net.jadeite.testingmod.item.custom.HammerItem;
 import net.jadeite.testingmod.item.custom.PaxelItem;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -46,6 +47,7 @@ public class ModItems {
     public static final Item CHEESE_HOE = registerItem("cheese_hoe", properties -> new HoeItem(ModToolMaterials.CHEESE, 1, -2.8f, properties));
     public static final Item CHEESE_SPEAR = registerItem("cheese_spear", properties -> new Item(properties.spear(ModToolMaterials.CHEESE, 0.95f, -0.95f, 0.6f, 2.5f, 11.0f, 6.75f, 5.1f, 11.25f, 4.6f)));
     public static final Item CHEESE_PAXEL = registerItem("cheese_paxel", properties -> new PaxelItem(ModToolMaterials.CHEESE, 2, -2.5f, properties));
+    public static final Item CHEESE_HAMMER = registerItem("cheese_hammer", properties -> new HammerItem(properties.pickaxe(ModToolMaterials.CHEESE, 4, -3f)));
 
     // EQUIPMENT
 

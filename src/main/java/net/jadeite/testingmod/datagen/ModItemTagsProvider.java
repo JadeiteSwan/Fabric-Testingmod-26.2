@@ -25,7 +25,8 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
 
         tag(ItemTags.PICKAXES)
                 .add(ModItems.getRK(ModItems.CHEESE_PICKAXE))
-                .add(ModItems.getRK(ModItems.CHEESE_PAXEL));
+                .add(ModItems.getRK(ModItems.CHEESE_PAXEL))
+                .add(ModItems.getRK(ModItems.CHEESE_HAMMER));
 
         tag(ItemTags.AXES)
                 .add(ModItems.getRK(ModItems.CHEESE_AXE))

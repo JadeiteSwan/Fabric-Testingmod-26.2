@@ -75,6 +75,7 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.CHEESE_SPEAR);
                 output.accept(ModItems.CHISEL);
                 output.accept(ModItems.CHEESE_PAXEL);
+                output.accept(ModItems.CHEESE_HAMMER);
 
                 output.accept(ModItems.CHEESE_HELMET);
                 output.accept(ModItems.CHEESE_CHESTPLATE);
