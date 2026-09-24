@@ -81,6 +81,8 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.CHEESE_CHESTPLATE);
                 output.accept(ModItems.CHEESE_LEGGINGS);
                 output.accept(ModItems.CHEESE_BOOTS);
+
+                output.accept(ModItems.CHEESE_HORSE_ARMOR);
             }).build());
 
     public static void registerModCreativeModeTabs() {

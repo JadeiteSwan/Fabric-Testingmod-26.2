@@ -75,5 +75,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateTrimmableItem(ModItems.CHEESE_CHESTPLATE, ModArmorMaterials.CHEESE_KEY, ItemModelGenerators.TRIM_PREFIX_CHESTPLATE, false);
         itemModelGenerators.generateTrimmableItem(ModItems.CHEESE_LEGGINGS, ModArmorMaterials.CHEESE_KEY, ItemModelGenerators.TRIM_PREFIX_LEGGINGS, false);
         itemModelGenerators.generateTrimmableItem(ModItems.CHEESE_BOOTS, ModArmorMaterials.CHEESE_KEY, ItemModelGenerators.TRIM_PREFIX_BOOTS, false);
+
+        itemModelGenerators.generateFlatItem(ModItems.CHEESE_HORSE_ARMOR, ModelTemplates.FLAT_ITEM);
     }
 }

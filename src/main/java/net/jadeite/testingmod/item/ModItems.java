@@ -57,6 +57,8 @@ public class ModItems {
     public static final Item CHEESE_LEGGINGS = registerItem("cheese_leggings", properties -> new Item(properties.humanoidArmor(ModArmorMaterials.CHEESE_ARMOR_MATERIAL, ArmorType.LEGGINGS)));
     public static final Item CHEESE_BOOTS = registerItem("cheese_boots", properties -> new Item(properties.humanoidArmor(ModArmorMaterials.CHEESE_ARMOR_MATERIAL, ArmorType.BOOTS)));
 
+    public static final Item CHEESE_HORSE_ARMOR = registerItem("cheese_horse_armor", properties -> new Item(properties.horseArmor(ModArmorMaterials.CHEESE_ARMOR_MATERIAL)));
+
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(TestingMod.MOD_ID, name), function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(TestingMod.MOD_ID, name)))));
     }

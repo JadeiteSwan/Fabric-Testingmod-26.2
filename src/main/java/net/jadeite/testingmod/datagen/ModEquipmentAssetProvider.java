@@ -10,6 +10,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.equipment.EquipmentAsset;
+import org.apache.logging.log4j.core.config.plugins.util.ResolverUtil;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -27,6 +28,7 @@ public class ModEquipmentAssetProvider implements DataProvider {
     private static void bootstrap(BiConsumer<ResourceKey<EquipmentAsset>, EquipmentClientInfo> consumer) {
         consumer.accept(ModArmorMaterials.CHEESE_KEY, EquipmentClientInfo.builder()
                 .addHumanoidLayers(Identifier.fromNamespaceAndPath(TestingMod.MOD_ID, "cheese"))
+                .addLayers(EquipmentClientInfo.LayerType.HORSE_BODY, new EquipmentClientInfo.Layer(Identifier.fromNamespaceAndPath(TestingMod.MOD_ID, "cheese")))
                 .build());
     }
 
