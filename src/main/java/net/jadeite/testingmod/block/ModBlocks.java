@@ -53,60 +53,6 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.GILDED_BLACKSTONE)));
 
-    public static final Block TIN_ORE = registerBlock("tin_ore",
-            properties -> new Block(properties
-                    .strength(10f)
-                    .requiresCorrectToolForDrops()
-                    .sound(SoundType.STONE)));
-
-    public static final Block LEAD_ORE = registerBlock("lead_ore",
-            properties -> new Block(properties
-                    .strength(10f)
-                    .requiresCorrectToolForDrops()
-                    .sound(SoundType.STONE)));
-
-    public static final Block BAUXITE_ORE = registerBlock("bauxite_ore",
-            properties -> new Block(properties
-                    .strength(10f)
-                    .requiresCorrectToolForDrops()
-                    .sound(SoundType.STONE)));
-
-    public static final Block ZINC_ORE = registerBlock("zinc_ore",
-            properties -> new Block(properties
-                    .strength(10f)
-                    .requiresCorrectToolForDrops()
-                    .sound(SoundType.STONE)));
-
-    public static final Block NICKEL_ORE = registerBlock("nickel_ore",
-            properties -> new Block(properties
-                    .strength(10f)
-                    .requiresCorrectToolForDrops()
-                    .sound(SoundType.STONE)));
-
-    public static final Block SILVER_ORE = registerBlock("silver_ore",
-            properties -> new Block(properties
-                    .strength(10f)
-                    .requiresCorrectToolForDrops()
-                    .sound(SoundType.STONE)));
-
-    public static final Block PLATINUM_ORE = registerBlock("platinum_ore",
-            properties -> new Block(properties
-                    .strength(10f)
-                    .requiresCorrectToolForDrops()
-                    .sound(SoundType.STONE)));
-
-    public static final Block LITHIUM_ORE = registerBlock("lithium_ore",
-            properties -> new Block(properties
-                    .strength(10f)
-                    .requiresCorrectToolForDrops()
-                    .sound(SoundType.STONE)));
-
-    public static final Block CHROMIUM_ORE = registerBlock("chromium_ore",
-            properties -> new Block(properties
-                    .strength(10f)
-                    .requiresCorrectToolForDrops()
-                    .sound(SoundType.STONE)));
-
     public static final Block MAGIC_BLOCK = registerBlock("magic_block",
             properties -> new MagicBlock(properties
                     .strength(5f)

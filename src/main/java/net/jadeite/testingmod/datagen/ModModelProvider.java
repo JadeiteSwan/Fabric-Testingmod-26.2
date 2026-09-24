@@ -19,8 +19,6 @@ import net.minecraft.client.renderer.item.ClientItem;
 import net.minecraft.client.renderer.item.ConditionalItemModel;
 import net.minecraft.client.renderer.item.ItemModel;
 import net.minecraft.client.renderer.item.properties.conditional.HasComponent;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 
 import java.util.Optional;
 
@@ -36,15 +34,6 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(ModBlocks.RAW_CHEESE_BLOCK);
         blockModelGenerators.createTrivialCube(ModBlocks.CHEESE_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.BOUNTIFUL_CHEESE_ORE);
-        blockModelGenerators.createTrivialCube(ModBlocks.TIN_ORE);
-        blockModelGenerators.createTrivialCube(ModBlocks.LEAD_ORE);
-        blockModelGenerators.createTrivialCube(ModBlocks.BAUXITE_ORE);
-        blockModelGenerators.createTrivialCube(ModBlocks.ZINC_ORE);
-        blockModelGenerators.createTrivialCube(ModBlocks.NICKEL_ORE);
-        blockModelGenerators.createTrivialCube(ModBlocks.SILVER_ORE);
-        blockModelGenerators.createTrivialCube(ModBlocks.PLATINUM_ORE);
-        blockModelGenerators.createTrivialCube(ModBlocks.LITHIUM_ORE);
-        blockModelGenerators.createTrivialCube(ModBlocks.CHROMIUM_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.MAGIC_BLOCK);
 
         MultiVariant off = blockModelGenerators.plainVariant(TexturedModel.CUBE.create(ModBlocks.CHEESE_LAMP, blockModelGenerators.modelOutput));
