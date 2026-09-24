@@ -43,6 +43,7 @@ public class ModCreativeModeTabs {
                 output.accept(ModBlocks.LITHIUM_ORE);
                 output.accept(ModBlocks.CHROMIUM_ORE);
                 output.accept(ModBlocks.MAGIC_BLOCK);
+                output.accept(ModBlocks.CHEESE_LAMP);
 
                 // STAIRS AND SLABS
                 output.accept(ModBlocks.CHEESE_STAIRS);

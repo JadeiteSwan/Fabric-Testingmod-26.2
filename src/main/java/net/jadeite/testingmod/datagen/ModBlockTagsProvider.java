@@ -35,6 +35,7 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 // BLOCKS
                 .add(ModBlocks.getRK(ModBlocks.CHEESE_BLOCK))
                 .add(ModBlocks.getRK(ModBlocks.MAGIC_BLOCK))
+                .add(ModBlocks.getRK(ModBlocks.CHEESE_LAMP))
                 .add(ModBlocks.getRK(ModBlocks.CHEESE_STAIRS))
                 .add(ModBlocks.getRK(ModBlocks.CHEESE_SLAB))
                 .add(ModBlocks.getRK(ModBlocks.CHEESE_FENCE))

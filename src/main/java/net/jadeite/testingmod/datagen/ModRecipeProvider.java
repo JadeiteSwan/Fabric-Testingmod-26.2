@@ -91,6 +91,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("cheese")
                         .save(output);
 
+                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHEESE_LAMP)
+                        .pattern("GC")
+                        .pattern("CG")
+                        .define('G', Items.GLOWSTONE_DUST)
+                        .define('C', ModItems.CHEESE_ITEM)
+                        .unlockedBy(getHasName(ModItems.CHEESE_ITEM), has(ModItems.CHEESE_ITEM))
+                        .group("cheese")
+                        .save(output);
+
                 shaped(RecipeCategory.COMBAT, ModItems.CHEESE_SWORD)
                         .pattern("C")
                         .pattern("C")

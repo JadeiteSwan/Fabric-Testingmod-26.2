@@ -3,11 +3,18 @@ package net.jadeite.testingmod.datagen;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.jadeite.testingmod.block.ModBlocks;
+import net.jadeite.testingmod.block.custom.CheeseLampBlock;
 import net.jadeite.testingmod.item.ModArmorMaterials;
 import net.jadeite.testingmod.item.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
+import net.minecraft.client.data.models.MultiVariant;
+import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
 import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.client.data.models.model.TextureMapping;
+import net.minecraft.client.data.models.model.TexturedModel;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 
 public class ModModelProvider extends FabricModelProvider {
 
@@ -31,6 +38,11 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(ModBlocks.LITHIUM_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.CHROMIUM_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.MAGIC_BLOCK);
+
+        MultiVariant off = blockModelGenerators.plainVariant(TexturedModel.CUBE.create(ModBlocks.CHEESE_LAMP, blockModelGenerators.modelOutput));
+        MultiVariant on = BlockModelGenerators.plainVariant(blockModelGenerators.createSuffixedVariant(ModBlocks.CHEESE_LAMP, "_on", ModelTemplates.CUBE_ALL, TextureMapping::cube));
+        blockModelGenerators.blockStateOutput.accept(MultiVariantGenerator.dispatch(ModBlocks.CHEESE_LAMP)
+                .with(BlockModelGenerators.createBooleanModelDispatch(CheeseLampBlock.CLICKED, on, off)));
 
         // STAIRS, SLABS, FENCES, AND WALLS
         blockModelGenerators.family(ModBlocks.CHEESE_BLOCK)

@@ -1,6 +1,7 @@
 package net.jadeite.testingmod.block;
 
 import net.jadeite.testingmod.TestingMod;
+import net.jadeite.testingmod.block.custom.CheeseLampBlock;
 import net.jadeite.testingmod.block.custom.MagicBlock;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -111,6 +112,13 @@ public class ModBlocks {
                     .strength(5f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.GLASS)), Component.translatable("tooltip.testingmod.magic_block"));
+
+    public static final Block CHEESE_LAMP = registerBlock("cheese_lamp",
+            properties -> new CheeseLampBlock(properties
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.GLASS)
+                    .lightLevel(state -> state.getValue(CheeseLampBlock.CLICKED) ? 15 : 0)));
 
     // STAIRS AND SLABS
     public static final Block CHEESE_STAIRS = registerBlock("cheese_stairs",
