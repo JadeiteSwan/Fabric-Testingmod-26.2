@@ -5,6 +5,7 @@ import net.jadeite.testingmod.TestingMod;
 import net.jadeite.testingmod.food.ModFoods;
 import net.jadeite.testingmod.item.custom.ChiselItem;
 import net.jadeite.testingmod.item.custom.HammerItem;
+import net.jadeite.testingmod.item.custom.ModArmorEffectItem;
 import net.jadeite.testingmod.item.custom.PaxelItem;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -51,7 +52,7 @@ public class ModItems {
 
     // EQUIPMENT
 
-    public static final Item CHEESE_HELMET = registerItem("cheese_helmet", properties -> new Item(properties.humanoidArmor(ModArmorMaterials.CHEESE_ARMOR_MATERIAL, ArmorType.HELMET)));
+    public static final Item CHEESE_HELMET = registerItem("cheese_helmet", properties -> new ModArmorEffectItem(properties.humanoidArmor(ModArmorMaterials.CHEESE_ARMOR_MATERIAL, ArmorType.HELMET)));
     public static final Item CHEESE_CHESTPLATE = registerItem("cheese_chestplate", properties -> new Item(properties.humanoidArmor(ModArmorMaterials.CHEESE_ARMOR_MATERIAL, ArmorType.CHESTPLATE)));
     public static final Item CHEESE_LEGGINGS = registerItem("cheese_leggings", properties -> new Item(properties.humanoidArmor(ModArmorMaterials.CHEESE_ARMOR_MATERIAL, ArmorType.LEGGINGS)));
     public static final Item CHEESE_BOOTS = registerItem("cheese_boots", properties -> new Item(properties.humanoidArmor(ModArmorMaterials.CHEESE_ARMOR_MATERIAL, ArmorType.BOOTS)));
