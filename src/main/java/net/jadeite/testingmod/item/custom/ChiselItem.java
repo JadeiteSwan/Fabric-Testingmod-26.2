@@ -1,6 +1,7 @@
 package net.jadeite.testingmod.item.custom;
 
 import net.jadeite.testingmod.block.ModBlocks;
+import net.jadeite.testingmod.data.ModDataComponents;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionResult;
@@ -38,6 +39,8 @@ public class ChiselItem extends Item {
             level.setBlockAndUpdate(context.getClickedPos(), CHISEL_MAP.get(clickedBlock).defaultBlockState());
 
             context.getItemInHand().hurtAndBreak(1, context.getPlayer(), context.getHand());
+
+            context.getItemInHand().set(ModDataComponents.COORDINATES, context.getClickedPos());
         }
 
         return InteractionResult.SUCCESS;
@@ -49,6 +52,10 @@ public class ChiselItem extends Item {
             builder.accept(Component.translatable("tooltip.testingmod.chisel.shift_down"));
         } else {
             builder.accept(Component.translatable("tooltip.testingmod.chisel"));
+        }
+
+        if(itemStack.get(ModDataComponents.COORDINATES) != null) {
+            builder.accept(Component.literal("Last block changed at: " + itemStack.get(ModDataComponents.COORDINATES)));
         }
 
         super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
