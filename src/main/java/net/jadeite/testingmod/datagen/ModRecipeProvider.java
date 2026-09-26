@@ -217,6 +217,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(ModItems.CHEESE_ITEM), has(ModItems.CHEESE_ITEM))
                         .group("cheese")
                         .save(output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.CHEESE_BOW)
+                        .pattern("SC ")
+                        .pattern("S C")
+                        .pattern("SC ")
+                        .define('C', ModItems.CHEESE_ITEM)
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.CHEESE_ITEM), has(ModItems.CHEESE_ITEM))
+                        .group("cheese")
+                        .save(output);
             }
         };
     }

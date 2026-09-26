@@ -53,5 +53,8 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
 
         tag(ItemTags.FOOT_ARMOR)
                 .add(ModItems.getRK(ModItems.CHEESE_BOOTS));
+
+        tag(ItemTags.BOW_ENCHANTABLE)
+                .add(ModItems.getRK(ModItems.CHEESE_BOW));
     }
 }

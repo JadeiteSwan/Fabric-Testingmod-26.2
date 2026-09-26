@@ -59,6 +59,8 @@ public class ModItems {
 
     public static final Item CHEESE_HORSE_ARMOR = registerItem("cheese_horse_armor", properties -> new Item(properties.horseArmor(ModArmorMaterials.CHEESE_ARMOR_MATERIAL)));
 
+    public static final Item CHEESE_BOW = registerItem("cheese_bow", properties -> new BowItem(properties.durability(500)));
+
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(TestingMod.MOD_ID, name), function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(TestingMod.MOD_ID, name)))));
     }

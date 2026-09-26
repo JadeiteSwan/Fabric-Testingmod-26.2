@@ -75,6 +75,8 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.CHEESE_BOOTS);
 
                 output.accept(ModItems.CHEESE_HORSE_ARMOR);
+
+                output.accept(ModItems.CHEESE_BOW);
             }).build());
 
     public static void registerModCreativeModeTabs() {
