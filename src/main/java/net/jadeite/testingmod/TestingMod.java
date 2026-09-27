@@ -6,6 +6,7 @@ import net.jadeite.testingmod.block.ModBlocks;
 import net.jadeite.testingmod.creativemodetab.ModCreativeModeTabs;
 import net.jadeite.testingmod.data.ModDataComponents;
 import net.jadeite.testingmod.item.ModItems;
+import net.jadeite.testingmod.keybind.ModKeyMappings;
 import net.jadeite.testingmod.registries.ModFuels;
 import net.minecraft.resources.Identifier;
 

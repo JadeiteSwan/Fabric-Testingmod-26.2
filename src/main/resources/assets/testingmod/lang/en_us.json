@@ -53,5 +53,7 @@
   "tooltip.testingmod.melted_cheese": "Very melted, very cheesy",
   "tooltip.testingmod.magic_block": "Turns cheese into diamonds and gives you regen!",
 
-  "tag.item.testingmod.transformable_items": "transformable_items"
+  "tag.item.testingmod.transformable_items": "transformable_items",
+
+  "key.testingmod.cheese_blast": "Cheese Blast"
 }

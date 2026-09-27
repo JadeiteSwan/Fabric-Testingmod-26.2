@@ -18,6 +18,9 @@
 		"main": [
 			"net.jadeite.testingmod.TestingMod"
 		],
+		"client": [
+			"net.jadeite.testingmod.TestingModClient"
+		],
 		"fabric-datagen": [
 			"net.jadeite.testingmod.TestingModDataGenerator"
 		]
